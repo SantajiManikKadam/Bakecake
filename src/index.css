@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Fraunces', serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+}
+
+.font-serif {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFDF9;
+}
+::-webkit-scrollbar-thumb {
+  background: #E6D8C7;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9862B;
+}
+
+/* Soft paper texture & subtle gradients */
+.bg-cream {
+  background-color: #FFF8EE;
+}
+.bg-warm-beige {
+  background-color: #F4E7D5;
+}
+.bg-blush {
+  background-color: #F1D5CC;
+}
+.text-chocolate {
+  color: #30231F;
+}
+.text-berry {
+  color: #6F1D3A;
+}
+.text-deep-berry {
+  color: #4A1328;
+}
+.border-baker {
+  border-color: #E6D8C7;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.08); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}

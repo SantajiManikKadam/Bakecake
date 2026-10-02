@@ -1,0 +1,6 @@
+{
+  "name": "BakeGhar — Artisan Cake Marketplace",
+  "description": "Premium cake marketplace connecting customers with verified home bakers in Pune. Freshly baked, locally loved.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
